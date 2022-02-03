@@ -98,16 +98,23 @@
                         <div class="dropdown-menu dropdown-menu-right profile-notification">
                             <div class="pro-head">
                                 <img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
-                                <span>John Doe</span>
-                                <a href="auth-signin.html" class="dud-logout" title="Logout">
+                                <span>{{Auth::user()->name}}</span>
+                                {{-- <a href="{{route('logout')}}" class="dud-logout" title="Logout">
                                     <i class="feather icon-log-out"></i>
-                                </a>
+                                </a> --}}
                             </div>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
                             <ul class="pro-body">
                                 <li><a href="javascript:" class="dropdown-item"><i class="feather icon-settings"></i> Settings</a></li>
                                 <li><a href="javascript:" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
                                 <li><a href="message.html" class="dropdown-item"><i class="feather icon-mail"></i> My Messages</a></li>
-                                <li><a href="auth-signin.html" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>
+                                <li><a href="{{route('logout')}}" class="dropdown-item" onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+
+
+<i class="feather icon-log-out"></i>    {{ __('Logout') }}</a></li>
                             </ul>
                         </div>
                     </div>
