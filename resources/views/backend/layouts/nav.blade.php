@@ -35,8 +35,12 @@
                     <li data-username="form elements advance componant validation masking wizard picker select"
                         class="nav-item">
                         <a href="form_elements.html" class="nav-link "><span class="pcoded-micon"><i
-                                    class="feather icon-file-text"></i></span><span class="pcoded-mtext">Form
-                                elements</span></a>
+                                    class="feather icon-file-text"></i></span><span class="pcoded-mtext">Services</span></a>
+                    </li>
+                    <li data-username="form elements advance componant validation masking wizard picker select"
+                        class="nav-item">
+                        <a href="{{route('setting.index')}}" class="nav-link "><span class="pcoded-micon">
+                            <i class="fas fa-cogs"></i></span><span class="pcoded-mtext">Setting</span></a>
                     </li>
                 </ul>
             </div>

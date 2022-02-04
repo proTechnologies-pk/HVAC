@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Backend\DashboardController;
+use App\Http\Controllers\Setting\SettingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,9 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-Route::prefix('backend')->group(function () {
-    Route::get('/dashboard', [DashboardController::class,'index'])->name('backend.dashboard');
+
+Route::group(['prefix' => 'backend', 'middleware' => ['auth']], function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('backend.dashboard');
+    Route::resource('/setting', SettingController::class);
+
 });
