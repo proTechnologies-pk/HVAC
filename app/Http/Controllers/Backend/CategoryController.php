@@ -5,9 +5,8 @@ namespace App\Http\Controllers\Backend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
-use App\Models\Service;
 
-class ServiceController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +15,8 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        $services = Service::with('parent')->get();
-        return view('backend.services.index')->with(compact('services'));
+        $services = Category::with('parent')->get();
+        return view('backend.category.index')->with(compact('services'));
     }
 
     /**
@@ -27,19 +26,15 @@ class ServiceController extends Controller
      */
     public function create()
     {
-
-        $cayegories = Category::where('is_active', 1)->get();
-
+        $services = Category::where('is_active', 1)->get();
         $data = [
             'is_edit' => false,
-            'title' => 'Add Service',
-            'route' =>  route('service.store'),
+            'title' => 'Add Category',
+            'route' =>  route('category.store'),
             'button' => 'Save',
-
-            'cayegories' => $cayegories,
-
+            'services' => $services,
         ];
-        return view('backend.services.form')->with(compact('data'));
+        return view('backend.category.form')->with(compact('data'));
     }
 
     /**
@@ -57,7 +52,7 @@ class ServiceController extends Controller
         ]);
 
 
-        $service = new Service();
+        $service = new Category();
         $service->name = $request->title;
         $service->description = $request->description;
         $service->parent_id = $request->parent_id;
@@ -65,7 +60,7 @@ class ServiceController extends Controller
         $service->web_display = ($request->active == 'on') ? true : false;
         $service->is_active = ($request->web_display == 'on') ? true : false;
         $service->save();
-        return redirect()->route('service.index');
+        return redirect()->route('category.index');
     }
 
     /**
@@ -87,17 +82,17 @@ class ServiceController extends Controller
      */
     public function edit($id)
     {
-        $service = Service::find($id);
-        $services = Service::where('is_active', 1)->get();
+        $service = Category::find($id);
+        $services = Category::where('is_active', 1)->get();
         $data = [
             'is_edit' => true,
-            'title' => 'Update Service',
-            'route' =>  route('service.update',$service->id),
+            'title' => 'Update Category',
+            'route' =>  route('category.update',$service->id),
             'button' => 'Update',
             'services' => $services,
             'edit_service' => $service,
         ];
-        return view('backend.services.form')->with(compact('data'));
+        return view('backend.category.form')->with(compact('data'));
         // return view('backend.services.form')->with(compact('service'));
     }
 
@@ -116,7 +111,7 @@ class ServiceController extends Controller
         'slug' => 'required',
     ]);
 
-    $service = Service::find($id);
+    $service = Category::find($id);
     $service->name = $request->title;
     $service->description = $request->description;
     $service->parent_id = $request->parent_id;
@@ -124,7 +119,7 @@ class ServiceController extends Controller
     $service->web_display = ($request->active == 'on') ? true : false;
     $service->is_active = ($request->web_display == 'on') ? true : false;
     $service->save();
-    return redirect()->route('service.index');
+    return redirect()->route('category.index');
     }
 
     /**
@@ -136,8 +131,8 @@ class ServiceController extends Controller
     public function destroy($id)
     {
         dd($id);
-        $service = Service::find($id);
+        $service = Category::find($id);
         $service->delete();
-        return redirect()->route('service.index')->with('success','Category has been Deleted Successfully!');
+        return redirect()->route('category.index')->with('success','Category has been Deleted Successfully!');
     }
 }

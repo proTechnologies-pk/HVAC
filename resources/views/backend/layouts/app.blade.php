@@ -32,6 +32,10 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
 
 
+    <link href="{{asset('backend/assets/css/cropper.min.css') }}" rel="stylesheet" />
+    <link href="{{asset('backend/assets/css/dropzone.css') }}" rel="stylesheet" />
+
+
 </head>
 
 <body>
@@ -48,10 +52,16 @@
 
     @yield('script')
 
+
     <script src="{{ asset('backend/assets/js/vendor-all.min.js') }}"></script>
     <script src="{{ asset('backend/assets/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('backend/assets/js/pcoded.min.js') }}"></script>
     <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+
+    <script src="{{asset('backend/assets/js/cropper.min.js') }}"></script>
+<script src="{{asset('backend/assets/js/dropzone.js') }}"></script>
+<script src="{{asset('backend/assets/js/my-dropzone.js') }}"></script>
+
 
 
 </body>
