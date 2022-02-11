@@ -37,10 +37,12 @@
                                                         <thead>
                                                             <tr>
                                                                 <th>Id</th>
+
                                                                 <th>Image</th>
                                                                 <th>Name</th>
                                                                 <th>Description</th>
                                                                 <th>Category</th>
+
                                                                 <th>Web Display</th>
                                                                 <th>Active</th>
                                                                 <th width="18%">Action</th>
@@ -52,10 +54,12 @@
                                                                 <tr>
                                                                     <td>{{ $service->id }}</td>
                                                                     <td>{{ $service->name }}</td>
+
                                                                     <td>{{ $service->name }}</td>
                                                                     <td>{{ $service->description }}</td>
                                                                     <td>{{ $service->description }}</td>
                                                                     <td>{{ $service->description }}</td>
+
 
                                                                     <td>
                                                                         <label class="switch ">
