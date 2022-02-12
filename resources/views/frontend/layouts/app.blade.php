@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
-    <title>eLEARNING - eLearning HTML Template</title>
+    <title>{{!is_null(global_setting()) ? global_setting()->title : 'DEMO'}}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">

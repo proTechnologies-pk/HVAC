@@ -2,19 +2,22 @@
     <nav class="pcoded-navbar">
         <div class="navbar-wrapper">
             <div class="navbar-brand header-logo">
-                <a href="index.html" class="b-brand">
-                    <div class="b-bg">
+                <a href="{{route('backend.dashboard')}}" class="b-brand">
+                    {{-- <div class="b-bg">
                         <i class="feather icon-trending-up"></i>
-                    </div>
-                    <span class="b-title">Datta Able</span>
+                    </div> --}}
+                    {{-- @dd(is_null(global_setting())) --}}
+                    <h4>
+                        <span class="b-title">{{!is_null(global_setting()) ? global_setting()->title : 'DEMO'}}</span>
+                    </h4>
                 </a>
                 <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
             </div>
             <div class="navbar-content scroll-div">
                 <ul class="nav pcoded-inner-navbar">
                    <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project"
-                        class="nav-item active">
-                        <a href="index.html" class="nav-link "><span class="pcoded-micon"><i
+                        class="nav-item">
+                        <a href="index.html" class="nav-link"><span class="pcoded-micon"><i
                                     class="feather icon-home"></i></span><span
                                 class="pcoded-mtext">Dashboard</span></a>
                     </li>
@@ -34,7 +37,7 @@
                     </li>
                     <li data-username="form elements advance componant validation masking wizard picker select"
                         class="nav-item">
-                        <a href="form_elements.html" class="nav-link "><span class="pcoded-micon"><i
+                        <a href="{{route('service.index')}}" class="nav-link "><span class="pcoded-micon"><i
                                     class="feather icon-file-text"></i></span><span class="pcoded-mtext">Services</span></a>
                     </li>
                     <li data-username="form elements advance componant validation masking wizard picker select"
@@ -46,3 +49,5 @@
             </div>
         </div>
     </nav>
+
+
