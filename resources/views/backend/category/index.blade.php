@@ -12,12 +12,12 @@
                                         <div class="card-block p-5">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <h3>Services</h3>
+                                                    <h3>Categories</h3>
                                                 </div>
                                                 <div class="col-md-6" style="text-align: right;">
-                                                    <a href="{{ route('service.create') }}"
+                                                    <a href="{{ route('category.create') }}"
                                                         class="btn btn-success pl-5 pr-5">
-                                                        Add Service
+                                                        Add Category
                                                     </a>
                                                 </div>
                                                 @if ($errors->any())
@@ -37,10 +37,9 @@
                                                         <thead>
                                                             <tr>
                                                                 <th>Id</th>
-                                                                <th>Image</th>
                                                                 <th>Name</th>
                                                                 <th>Description</th>
-                                                                <th>Category</th>
+                                                                <th>Parent</th>
                                                                 <th>Web Display</th>
                                                                 <th>Active</th>
                                                                 <th width="18%">Action</th>
@@ -52,11 +51,8 @@
                                                                 <tr>
                                                                     <td>{{ $service->id }}</td>
                                                                     <td>{{ $service->name }}</td>
-                                                                    <td>{{ $service->name }}</td>
                                                                     <td>{{ $service->description }}</td>
-                                                                    <td>{{ $service->description }}</td>
-                                                                    <td>{{ $service->description }}</td>
-
+                                                                    <td> {{ isset($service->parent)?  $service->parent->name : "-"}}</td>
                                                                     <td>
                                                                         <label class="switch ">
                                                                             <input type="checkbox" class="primary"
@@ -72,8 +68,8 @@
                                                                         </label>
                                                                     </td>
                                                                     <td>
-                                                                    <a href="{{route('service.edit',$service->id)}}" class="btn btn_custome btn-outline-primary btn-sm">Edit</a>
-                                                                    <a href="{{route('service.destroy',$service->id)}}" class="btn btn_custome btn-outline-danger btn-sm">Delete</a>
+                                                                    <a href="{{route('category.edit',$service->id)}}" class="btn btn_custome btn-outline-primary btn-sm">Edit</a>
+                                                                    <a href="{{route('category.destroy',$service->id)}}" class="btn btn_custome btn-outline-danger btn-sm">Delete</a>
 
                                                                 </td>
                                                                 </tr>
