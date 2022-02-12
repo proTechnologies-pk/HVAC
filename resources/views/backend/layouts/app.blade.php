@@ -50,7 +50,7 @@
 
     @yield('script')
 
-    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+
     <script src="{{ asset('backend/assets/js/vendor-all.min.js') }}"></script>
     <script src="{{ asset('backend/assets/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('backend/assets/js/pcoded.min.js') }}"></script>
