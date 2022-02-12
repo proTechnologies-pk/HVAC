@@ -6,6 +6,10 @@ use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Backend\ServiceController;
 use App\Http\Controllers\Backend\CategoryController;
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/main
 
 /*
 |--------------------------------------------------------------------------
@@ -42,5 +46,9 @@ Route::group(['prefix' => 'backend', 'middleware' => ['auth']], function () {
     Route::resource('/setting', SettingController::class);
     Route::resource('/service', ServiceController::class);\
     Route::resource('/category', CategoryController::class);
+
+    Route::resource('/service', ServiceController::class);\
+    Route::resource('/category', CategoryController::class);
+
 
 });

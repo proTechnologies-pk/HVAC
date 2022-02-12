@@ -17,7 +17,13 @@
                 <ul class="nav pcoded-inner-navbar">
                    <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project"
                         class="nav-item">
+<<<<<<< HEAD
                         <a href="{{route('backend.dashboard')}}" class="nav-link"><span class="pcoded-micon"><i
+=======
+
+                        <a href="{{route('backend.dashboard')}}" class="nav-link"><span class="pcoded-micon"><i
+
+>>>>>>> upstream/main
                                     class="feather icon-home"></i></span><span
                                 class="pcoded-mtext">Dashboard</span></a>
                     </li>
@@ -36,6 +42,10 @@
                     </li>
                     <li data-username="form elements advance componant validation masking wizard picker select"
                         class="nav-item">
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/main
                         <a href="{{route('category.index')}}" class="nav-link "><span class="pcoded-micon"><i
                                     class="feather icon-file-text"></i></span><span class="pcoded-mtext">Category</span></a>
                     </li>
@@ -43,6 +53,10 @@
                         class="nav-item">
                         <a href="{{route('service.index')}}" class="nav-link "><span class="pcoded-micon"><i
                                     class="feather icon-file-text"></i></span><span class="pcoded-mtext">Service</span></a>
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/main
                     </li>
                     <li data-username="form elements advance componant validation masking wizard picker select"
                         class="nav-item">
