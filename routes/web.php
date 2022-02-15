@@ -7,7 +7,6 @@ use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Backend\ServiceController;
 use App\Http\Controllers\Backend\CategoryController;
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,8 +41,10 @@ Route::group(['prefix' => 'backend', 'middleware' => ['auth']], function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('backend.dashboard');
     Route::resource('/setting', SettingController::class);
 
-    Route::resource('/service', ServiceController::class);\
+    Route::resource('/service', ServiceController::class);
     Route::resource('/category', CategoryController::class);
+
+
 
 
 });

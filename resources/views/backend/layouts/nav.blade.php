@@ -18,8 +18,8 @@
                    <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project"
                         class="nav-item">
 
-                        <a href="{{route('backend.dashboard')}}" class="nav-link"><span class="pcoded-micon"><i
 
+                        <a href="{{route('backend.dashboard')}}" class="nav-link"><span class="pcoded-micon"><i
                                     class="feather icon-home"></i></span><span
                                 class="pcoded-mtext">Dashboard</span></a>
                     </li>

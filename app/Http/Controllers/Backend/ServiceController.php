@@ -30,14 +30,16 @@ class ServiceController extends Controller
 
         $cayegories = Category::where('is_active', 1)->get();
 
+
+        $cayegories = Category::where('is_active', 1)->get();
+
+
         $data = [
             'is_edit' => false,
             'title' => 'Add Service',
             'route' =>  route('service.store'),
             'button' => 'Save',
-
             'cayegories' => $cayegories,
-
         ];
         return view('backend.services.form')->with(compact('data'));
     }

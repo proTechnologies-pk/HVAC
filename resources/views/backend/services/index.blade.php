@@ -37,12 +37,10 @@
                                                         <thead>
                                                             <tr>
                                                                 <th>Id</th>
-
                                                                 <th>Image</th>
                                                                 <th>Name</th>
                                                                 <th>Description</th>
                                                                 <th>Category</th>
-
                                                                 <th>Web Display</th>
                                                                 <th>Active</th>
                                                                 <th width="18%">Action</th>
@@ -59,8 +57,6 @@
                                                                     <td>{{ $service->description }}</td>
                                                                     <td>{{ $service->description }}</td>
                                                                     <td>{{ $service->description }}</td>
-
-
                                                                     <td>
                                                                         <label class="switch ">
                                                                             <input type="checkbox" class="primary"

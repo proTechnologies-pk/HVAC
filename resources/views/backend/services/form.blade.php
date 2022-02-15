@@ -9,7 +9,6 @@
                 <div class="pcoded-inner-content">
                     <div class="main-body">
                         <div class="page-wrapper">
-
                             <div class="card">
                                 <div class="card-block p-5 ">
                                     <div class="row">
@@ -48,9 +47,6 @@
                                                     <input type="hidden" name="id" id="id"
                                                         value="{{ isset($data['edit_service']) ? $data['edit_service']->id : '' }}">
                                                 @endif
-
-
-                                                {{-- @dd($data['edit_service']) --}}
                                                 <div class="row">
                                                     <div class="col-md-5">
                                                         <div class="form-group">
@@ -63,18 +59,13 @@
                                                     <div class="col-md-7">
                                                         <div class="form-group">
                                                             <label for="">Description:</label>
-                                                            <input type="text" name="description" id="description"
-
-                                                                value="{{ isset($data['edit_service']) ? $data['edit_service']->description : '' }}"
-
-                                                                class="form-control form-control-sm">
+                                                            <input type="text" name="description" id="description" value="{{ isset($data['edit_service']) ? $data['edit_service']->description : '' }}" class="form-control form-control-sm">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-4">
                                                         <div class="form-group">
-
                                                             <label for="">Parent:</label>
                                                             <select name="parent_id" id="parent_id"
                                                                 class="form-control form-control-sm">
@@ -92,8 +83,6 @@
                                                                     <option value="{{ $cayegory->id }}"
                                                                         {{ $selected }}>{{ $cayegory->name }}
                                                                     </option>
-
-
                                                                 @endforeach
                                                             </select>
                                                         </div>
@@ -177,7 +166,6 @@
                                         </div>
                                     </div>
                                 </form>
-
                                 </div>
                             </div>
                         </div>
@@ -190,13 +178,10 @@
 
 @endsection
 @section('script')
-
     <script>
      image_upload_path = '{{ route("service.index")  }}';
         var form_id = 'brands-form';
         p_images = JSON.parse('{!! json_encode($data["button"]) !!}');
         maxFiles = 1;
     </script>
-
-
 @endsection
