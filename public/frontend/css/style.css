@@ -1,9 +1,18 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06BBCC;
+    /* --primary: #06BBCC; */
+    --primary: #0f97d6;
     --light: #F0FBFC;
     --dark: #181d38;
 }
+
+.top_bar{
+    background-color: var(--primary);
+    height: 29px;
+    width: 100%;
+}
+
+
 
 .fw-medium {
     font-weight: 600 !important;
@@ -157,7 +166,7 @@
         position: relative;
         min-height: 500px;
     }
-    
+
     .header-carousel .owl-carousel-item img {
         position: absolute;
         width: 100%;
