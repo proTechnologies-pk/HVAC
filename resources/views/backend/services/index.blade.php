@@ -37,18 +37,10 @@
                                                         <thead>
                                                             <tr>
                                                                 <th>Id</th>
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/main
                                                                 <th>Image</th>
                                                                 <th>Name</th>
                                                                 <th>Description</th>
                                                                 <th>Category</th>
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/main
                                                                 <th>Web Display</th>
                                                                 <th>Active</th>
                                                                 <th width="18%">Action</th>
@@ -60,19 +52,11 @@
                                                                 <tr>
                                                                     <td>{{ $service->id }}</td>
                                                                     <td>{{ $service->name }}</td>
-<<<<<<< HEAD
-=======
 
->>>>>>> upstream/main
                                                                     <td>{{ $service->name }}</td>
                                                                     <td>{{ $service->description }}</td>
                                                                     <td>{{ $service->description }}</td>
                                                                     <td>{{ $service->description }}</td>
-
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/main
                                                                     <td>
                                                                         <label class="switch ">
                                                                             <input type="checkbox" class="primary"

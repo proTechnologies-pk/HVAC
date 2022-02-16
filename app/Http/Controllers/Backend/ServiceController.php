@@ -27,25 +27,19 @@ class ServiceController extends Controller
      */
     public function create()
     {
-<<<<<<< HEAD
-        $cayegories = Category::where('is_active', 1)->get();
-=======
 
         $cayegories = Category::where('is_active', 1)->get();
 
->>>>>>> upstream/main
+
+        $cayegories = Category::where('is_active', 1)->get();
+
+
         $data = [
             'is_edit' => false,
             'title' => 'Add Service',
             'route' =>  route('service.store'),
             'button' => 'Save',
-<<<<<<< HEAD
             'cayegories' => $cayegories,
-=======
-
-            'cayegories' => $cayegories,
-
->>>>>>> upstream/main
         ];
         return view('backend.services.form')->with(compact('data'));
     }
