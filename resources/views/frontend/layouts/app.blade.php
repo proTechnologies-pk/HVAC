@@ -24,6 +24,8 @@
     <!-- Libraries Stylesheet -->
     <link href="{{asset('frontend/lib/animate/animate.min.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/lib/owlcarousel/asset/owl.carousel.min.css')}}" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{{asset('frontend/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -63,6 +65,9 @@
     <script src="{{asset('frontend/lib/easing/easing.min.js')}}"></script>
     <script src="{{asset('frontend/lib/waypoints/waypoints.min.js')}}"></script>
     <script src="{{asset('frontend/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+
+    {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> --}}
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="{{asset('frontend/js/main.js')}}"></script>
