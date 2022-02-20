@@ -47,9 +47,31 @@
 @include('frontend.layouts.header')
 
 
+<div>
+    @yield('content')
+</div>
 
-@yield('content')
-
+<div class="card res_nav_card d-none">
+    <div class="card-body">
+        <ul>
+            <li class="res_nav">
+                <a class="nav-link " href="#">Home</a>
+            </li>
+            <li class="res_nav">
+                <a class="nav-link " href="#">Home</a>
+            </li>
+            <li class="res_nav">
+                <a class="nav-link " href="#">Home</a>
+            </li>
+            <li class="res_nav">
+                <a class="nav-link " href="#">Home</a>
+            </li>
+            <li class="res_nav">
+                <a class="nav-link " href="#">Home</a>
+            </li>
+        </ul>
+    </div>
+</div>
 
     @include('frontend.layouts.footer')
 
@@ -71,6 +93,21 @@
 
     <!-- Template Javascript -->
     <script src="{{asset('frontend/js/main.js')}}"></script>
+    <script>
+        $(document).ready(function(){
+        $('.top_nav').hover(function () {
+           $(this).children('.top_nav_1').css('display' ,'block');
+        },function(){
+            $(this).children('.top_nav_1').css('display' ,'none');
+    });
+    });
+
+        $('.navbar-toggler').on('click', function(){
+$('.res_nav_card').toggleClass('d-none');
+        });
+
+
+        </script>
 </body>
 
 </html>

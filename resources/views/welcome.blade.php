@@ -3,7 +3,7 @@
 @section('content')
 
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" style="    margin-top: -19px !important;">
+{{-- <div id="myCarousel" class="carousel slide" data-ride="carousel" style="    margin-top: -19px !important;">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -14,15 +14,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="{{asset('frontend/img/slider/slider1.jpg')}}" alt="Los Angeles" style="width:100%;">
+        <img src="{{asset('frontend/img/slider/banner1.jpg')}}" alt="Los Angeles" style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="{{asset('frontend/img/slider/slider2.jpg')}}" alt="Chicago" style="width:100%;">
+        <img src="{{asset('frontend/img/slider/banner2.jpg')}}" alt="Chicago" style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="{{asset('frontend/img/slider/slider1.jpg')}}" alt="New york" style="width:100%;">
+        <img src="{{asset('frontend/img/slider/banner1.jpg')}}" alt="New york" style="width:100%;">
       </div>
     </div>
 
@@ -82,8 +82,8 @@
             </div>
         </div>
     </div>
-</div>
-<!-- Service End -->
+</div> --}}
+
 
 
 

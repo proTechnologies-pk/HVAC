@@ -161,6 +161,13 @@
         padding: 10px 0;
     }
 
+    .navbar-brand img{
+        position: absolute;
+        left: 27px;
+        top: 13px;
+    }
+
+
     .navbar-light .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
@@ -182,6 +189,14 @@
 }
 
 @media (min-width: 992px) {
+
+
+  .navbar-brand img{
+        position: absolute;
+        left: 27px;
+    }
+
+
     .navbar .nav-item .dropdown-menu {
         display: block;
         margin-top: 0;
@@ -487,3 +502,24 @@
     padding-right: 0;
     border-right: none;
 }
+/* ------------------------------- */
+.res_nav_card{
+    position: absolute;
+    display: list-item;
+    left: 0px;
+    top: 0px;
+    width: 250px;
+    height: 100%;
+}
+
+
+   .res_nav{
+        margin-left: -36px;
+    background-color: aliceblue;
+    margin-bottom: 3px;
+    }
+
+   .top_nav_1{
+        position: absolute;
+        top: 36px;
+    }
