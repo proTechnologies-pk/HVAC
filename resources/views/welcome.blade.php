@@ -3,7 +3,7 @@
 @section('content')
 
 
-{{-- <div id="myCarousel" class="carousel slide" data-ride="carousel" style="    margin-top: -19px !important;">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="    margin-top: -19px !important;">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -82,7 +82,7 @@
             </div>
         </div>
     </div>
-</div> --}}
+</div>
 
 
 
