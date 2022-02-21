@@ -4,6 +4,26 @@
         top: 14px !important;
         right: 21px !important;
     }
+    .top_nav_1{
+width: 40%;
+    }
+
+   .top_nav_1 a{
+        font-size: 11px;
+        color: black;
+    }
+   .top_nav_1 a:hover{
+        color: #0f97d6;
+        text-decoration: none;
+    }
+    .top_nav_1 b{
+        font-size: 12px;
+        color: #0f97d6;
+        text-transform: uppercase;
+    }
+    .top_nav_1 hr{
+        margin-top: 2px;
+    }
 
 </style>
 
@@ -51,95 +71,179 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 152px;">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item top_nav">
-                    <a class="nav-link " href="#">Home</a>
-                    <div class="Jumbotron top_nav_1" style="display: block;">
+                    <a class="nav-link " href="#">Heating</a>
+                    <div class="Jumbotron top_nav_1" style="display: none;">
                         <div class="card">
                             <div class="card-body">
-                                <ul>
-                                    <li class="res_nav">
-                                        <a class="nav-link " href="#">Home</a>
-                                    </li>
-                                    <li class="res_nav">
-                                        <a class="nav-link " href="#">Home</a>
-                                    </li>
-                                    <li class="res_nav">
-                                        <a class="nav-link " href="#">Home</a>
-                                    </li>
-                                    <li class="res_nav">
-                                        <a class="nav-link " href="#">Home</a>
-                                    </li>
-                                    <li class="res_nav">
-                                        <a class="nav-link " href="#">Home</a>
-                                    </li>
-                                </ul>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <span><b>FURNACE</b></span>
+                                            <hr>
+                                            <li><a href="">Rent Furnace</a></li>
+                                            <li><a href="">Buy Furnace</a></li>
+                                            <li><a href="">Repair Furnace</a></li>
+                                            <li><a href="">Tune up & Maintenance</a></li>
+                                            <br>
+                                            <span class="mt-3"><b>Air Handler</b></span>
+                                            <hr>
+                                            <li><a href="">Buy Air Handler</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul>
+                                           <span><b>BOILER</b></span>
+                                            <hr>
+                                            <li><a href="">Rent Boiler</a></li>
+                                            <li><a href="">Buy Boiler</a></li>
+                                            <li><a href="">Repair Boiler</a></li>
+                                            <li><a href="">Tune up & Maintenance</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="nav-item top_nav">
-                    <a class="nav-link " href="#">Home</a>
+                    <a class="nav-link " href="#">Cooling</a>
                     <div class="Jumbotron top_nav_1" style="display:none;">
                         <div class="card">
                             <div class="card-body">
-                                <p>
-                                    A paragraph <a href="#">paragraph</a> is a self-contained unit of discourse in
-                                    writing dealing with a
-                                    particular point or idea. <br>
-                                    A paragraph consists of one or more sentences. Though not required by the syntax
-                                    of any language,
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <span><b>Air Conditioners</b></span>
+                                            <hr>
+                                            <li><a href="">Rent Air Conditioners</a></li>
+                                            <li><a href="">Buy Air Conditioners</a></li>
+                                            <li><a href="">Repair Air Conditioners</a></li>
+                                            <li><a href="">Tune up & Maintenance</a></li>
+                                            <br>
+                                            <span class="mt-3"><b>Heat Pumps</b></span>
+                                            <hr>
+                                            <li><a href="">Rent Heat Pumps</a></li>
+                                            <li><a href="">Buy Heat Pumps</a></li>
+                                            <li><a href="">Repair Heat Pumps</a></li>
+                                            <li><a href="">Tune up & Maintenance</a></li>
 
-                                </p>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul>
+                                           <span><b>Ductless Air Conditioners</b></span>
+                                            <hr>
+                                            <li><a href="">Rent Ductless Air Conditioners</a></li>
+                                            <li><a href="">Buy Ductless Air Conditioners</a></li>
+                                            <li><a href="">Repair Ductless Air Conditioners</a></li>
+                                            <li><a href="">Tune up & Maintenance</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="nav-item top_nav">
-                    <a class="nav-link " href="#">Home</a>
-                    <div class="Jumbotron top_nav_1"style="display: none;">
+                    <a class="nav-link " href="#">Water Heating</a>
+                    <div class="Jumbotron top_nav_1" style="display: none;">
                         <div class="card">
                             <div class="card-body">
-                                <p>
-                                    A paragraph <a href="#">paragraph</a> is a self-contained unit of discourse in
-                                    writing dealing with a
-                                    particular point or idea. <br>
-                                    A paragraph consists of one or more sentences. Though not required by the syntax
-                                    of any language,
-
-                                </p>
+                               <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <span><b>Water Heater Tank</b></span>
+                                            <hr>
+                                            <li><a href="">Rent Water Heater Tank</a></li>
+                                            <li><a href="">Buy Water Heater Tank</a></li>
+                                            <li><a href="">Repair Water Heater Tank</a></li>
+                                                                                  </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul>
+                                           <span><b>Tankless Water Heaters</b></span>
+                                            <hr>
+                                            <li><a href="">Rent Tankless Water Heaters</a></li>
+                                            <li><a href="">Buy Tankless Water Heaters</a></li>
+                                            <li><a href="">Repair Tankless Water Heaters</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="nav-item top_nav">
-                    <a class="nav-link " href="#">Home</a>
-                    <div class="Jumbotron top_nav_1"style="display: none;">
+                    <a class="nav-link " href="#">Water Treatment</a>
+                    <div class="Jumbotron top_nav_1" style="display: none;">
                         <div class="card">
                             <div class="card-body">
-                                <p>
-                                    A paragraph <a href="#">paragraph</a> is a self-contained unit of discourse in
-                                    writing dealing with a
-                                    particular point or idea. <br>
-                                    A paragraph consists of one or more sentences. Though not required by the syntax
-                                    of any language,
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <span><b>Whole-House Carbon Filtration System</b></span>
+                                            <hr>
+                                            <li><a href="">Rent Whole-House Carbon Filtration System</a></li>
+                                            <li><a href="">Buy Whole-House Carbon Filtration System</a></li>
+                                             <br>
+                                            <span class="mt-3"><b>Reverse Osmosis Drinking Water System</b></span>
+                                            <hr>
+                                            <li><a href="">Rent RODWS</a></li>
+                                            <li><a href="">Buy RODWS</a></li>
 
-                                </p>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul>
+                                           <span><b>Water Softener</b></span>
+                                            <hr>
+                                            <li><a href="">Rent Water Softener</a></li>
+                                            <li><a href="">Buy Water Softener</a></li>
+                                            <li><a href="">Repair Water Softener</a></li>
+<br>
+                                            <span><b>Home Water Filters</b></span>
+                                            <hr>
+                                            <li><a href="">Rent Home Water Filters</a></li>
+                                            <li><a href="">Buy Home Water Filters</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="nav-item top_nav">
-                    <a class="nav-link " href="#">Home</a>
-                    <div class="Jumbotron top_nav_1"style="display: none;">
+                    <a class="nav-link " href="#">Air Filteration</a>
+                    <div class="Jumbotron top_nav_1" style="display: block;">
                         <div class="card">
                             <div class="card-body">
-                                <p>
-                                    A paragraph <a href="#">paragraph</a> is a self-contained unit of discourse in
-                                    writing dealing with a
-                                    particular point or idea. <br>
-                                    A paragraph consists of one or more sentences. Though not required by the syntax
-                                    of any language,
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <span><b>HRV</b></span>
+                                            <hr>
+                                            <li><a href="">Rent HRV</a></li>
+                                            <li><a href="">Buy HRV</a></li>
+                                            <br>
+                                            <span class="mt-3"><b>HEPA Filtration</b></span>
+                                            <hr>
+                                            <li><a href="">Rent HEPA Filtration</a></li>
+                                            <li><a href="">Buy Air Purification</a></li>
 
-                                </p>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul>
+                                           <span><b>Humidifier</b></span>
+                                            <hr>
+                                            <li><a href="">Rent Humidifier</a></li>
+                                            <li><a href="">Buy Humidifier</a></li>
+                                            <li><a href="">Buy Dehumidifier</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -168,10 +272,19 @@
 
     </div>
 </nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-
-@if(isset($settig))
-<div class="notice">
-    <p class="text-center pt-3 text-white" style="font-size: 15px;">this is notice</p>
-</div>
+@if (isset($settig))
+    <div class="notice">
+        <p class="text-center pt-3 text-white" style="font-size: 15px;">this is notice</p>
+    </div>
 @endif
