@@ -60,6 +60,7 @@
         opacity: 0.8;
     }
 
+
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -502,6 +503,7 @@
     padding-right: 0;
     border-right: none;
 }
+
 /* ------------------------------- */
 .res_nav_card{
     position: absolute;
@@ -523,3 +525,4 @@
         position: absolute;
         top: 36px;
     }
+
