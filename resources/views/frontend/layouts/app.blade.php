@@ -24,6 +24,8 @@
     <!-- Libraries Stylesheet -->
     <link href="{{asset('frontend/lib/animate/animate.min.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/lib/owlcarousel/asset/owl.carousel.min.css')}}" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{{asset('frontend/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -45,13 +47,22 @@
 @include('frontend.layouts.header')
 
 
+<div>
+    @yield('content')
+</div>
 
-@yield('content')
-
+@include('frontend.layouts.res_side_nav')
 
     @include('frontend.layouts.footer')
 
-
+<style>
+    .active_this{
+        font-weight: bolder;
+    background-color: #1493ce;
+    color: white !important;
+}
+    }
+</style>
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -64,8 +75,34 @@
     <script src="{{asset('frontend/lib/waypoints/waypoints.min.js')}}"></script>
     <script src="{{asset('frontend/lib/owlcarousel/owl.carousel.min.js')}}"></script>
 
+    {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> --}}
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <!-- Template Javascript -->
     <script src="{{asset('frontend/js/main.js')}}"></script>
+    <script>
+        $(document).ready(function(){
+        $('.top_nav').hover(function () {
+           $(this).children('.top_nav_1').css('display' ,'block');
+        },function(){
+            $(this).children('.top_nav_1').css('display' ,'none');
+    });
+    });
+
+        $('.navbar-toggler').on('click', function(){
+$('.res_nav_card').toggleClass('d-none');
+        });
+
+        $('.res_nav_toggle').on('click', function(){
+            // $(this).css('font-weight' ,'bolder');
+            // $(this).css('background-color' ,'#0596a3');
+            // $(this).css('color' ,'white');
+            $(this).toggleClass('active_this');
+            let Class = $(this).data('class');
+            $('.'+Class).toggleClass('d-none');
+
+        });
+        </script>
 </body>
 
 </html>
