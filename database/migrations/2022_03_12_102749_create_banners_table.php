@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateServicesTable extends Migration
+class CreateBannersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreateServicesTable extends Migration
      */
     public function up()
     {
-        Schema::create('services', function (Blueprint $table) {
+        Schema::create('banners', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('title')->nullable();
             $table->string('description')->nullable();
-            $table->bigInteger('parent_id')->nullable();
-            $table->string('slug');
-            $table->boolean('web_display');
-            $table->boolean('is_active');
+            $table->string('image');
+            $table->bigInteger('title_active');
+            $table->bigInteger('active');
             $table->timestamps();
         });
     }
@@ -32,6 +31,6 @@ class CreateServicesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('services');
+        Schema::dropIfExists('banners');
     }
 }
