@@ -5,25 +5,18 @@
 @if(count(getWebBanners()) > 0)
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel" style="    margin-top: -19px !important;">
-    <!-- Indicators -->
+       <!-- Indicators -->
     <ol class="carousel-indicators">
-<<<<<<< HEAD
         @foreach (getWebBanners() as $key => $banner )
       <li data-target="#myCarousel" data-slide-to="{{$key}}" class="{{($key == 0) ? 'active' : '' }}"></li>
       {{-- <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li> --}}
       @endforeach
 
-=======
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
->>>>>>> 1d64b09548066981c09fe97cdf06d4b244ea240f
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-<<<<<<< HEAD
         @foreach (getWebBanners() as $banner )
 
 
@@ -32,24 +25,13 @@
       </div>
 
       {{-- <div class="item">
-=======
-      <div class="item active">
-        <img src="{{asset('frontend/img/slider/banner1.jpg')}}" alt="Los Angeles" style="width:100%;">
-      </div>
-
-      <div class="item">
->>>>>>> 1d64b09548066981c09fe97cdf06d4b244ea240f
         <img src="{{asset('frontend/img/slider/banner2.jpg')}}" alt="Chicago" style="width:100%;">
       </div>
 
       <div class="item">
         <img src="{{asset('frontend/img/slider/banner1.jpg')}}" alt="New york" style="width:100%;">
-<<<<<<< HEAD
       </div> --}}
       @endforeach
-=======
-      </div>
->>>>>>> 1d64b09548066981c09fe97cdf06d4b244ea240f
     </div>
 
     <!-- Left and right controls -->
@@ -109,10 +91,6 @@
         </div>
     </div>
 </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 1d64b09548066981c09fe97cdf06d4b244ea240f
 
 
 
