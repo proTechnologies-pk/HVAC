@@ -8,6 +8,7 @@
 }
 
 .top_bar{
+<<<<<<< HEAD
     background: #F4F4F4;
     height: 44px;
     width: 100%;
@@ -59,6 +60,14 @@
         color: #000000;
         opacity: 0.8;
     }
+=======
+    background-color: var(--primary);
+    height: 29px;
+    width: 100%;
+}
+
+
+>>>>>>> ee05435ff2826fa93f758b3b86df9ab60e1e643f
 
 .fw-medium {
     font-weight: 600 !important;
@@ -502,6 +511,7 @@
     padding-right: 0;
     border-right: none;
 }
+<<<<<<< HEAD
 /* ------------------------------- */
 .res_nav_card{
     position: absolute;
@@ -523,3 +533,5 @@
         position: absolute;
         top: 36px;
     }
+=======
+>>>>>>> ee05435ff2826fa93f758b3b86df9ab60e1e643f
