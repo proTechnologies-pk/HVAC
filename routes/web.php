@@ -43,9 +43,11 @@ Route::get('/products/buy', [ProductsController::class, 'rent'])->name('products
 Route::group(['prefix' => 'backend', 'middleware' => ['auth']], function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('backend.dashboard');
     Route::resource('/setting', SettingController::class);
+
     Route::get('settings/banners', [SettingController::class,'bannerIndex'])->name('setting.banner');
     Route::get('settings/addbanner', [SettingController::class,'bannerCreate'])->name('setting.addbanner');
     Route::POST('settings/storebanner', [SettingController::class,'bannerStore'])->name('setting.storebanner');
+
     Route::resource('/service', ServiceController::class);
     Route::resource('/category', CategoryController::class);
 

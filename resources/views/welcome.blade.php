@@ -7,6 +7,7 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel" style="    margin-top: -19px !important;">
     <!-- Indicators -->
     <ol class="carousel-indicators">
+
         @foreach (getWebBanners() as $key => $banner )
       <li data-target="#myCarousel" data-slide-to="{{$key}}" class="{{($key == 0) ? 'active' : '' }}"></li>
       {{-- <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -91,6 +92,7 @@
         </div>
     </div>
 </div>
+
 
 
 

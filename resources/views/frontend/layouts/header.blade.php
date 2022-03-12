@@ -1,3 +1,4 @@
+
 <style>
     .navbar-toggler {
         position: absolute !important;
@@ -262,3 +263,4 @@
         <p class="text-center pt-3 text-white" style="font-size: 15px;">this is notice</p>
     </div>
 @endif
+
