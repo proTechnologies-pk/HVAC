@@ -51,31 +51,18 @@
     @yield('content')
 </div>
 
-<div class="card res_nav_card d-none">
-    <div class="card-body">
-        <ul>
-            <li class="res_nav">
-                <a class="nav-link " href="#">Home</a>
-            </li>
-            <li class="res_nav">
-                <a class="nav-link " href="#">Home</a>
-            </li>
-            <li class="res_nav">
-                <a class="nav-link " href="#">Home</a>
-            </li>
-            <li class="res_nav">
-                <a class="nav-link " href="#">Home</a>
-            </li>
-            <li class="res_nav">
-                <a class="nav-link " href="#">Home</a>
-            </li>
-        </ul>
-    </div>
-</div>
+@include('frontend.layouts.res_side_nav')
 
     @include('frontend.layouts.footer')
 
-
+<style>
+    .active_this{
+        font-weight: bolder;
+    background-color: #1493ce;
+    color: white !important;
+}
+    }
+</style>
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -106,7 +93,15 @@
 $('.res_nav_card').toggleClass('d-none');
         });
 
+        $('.res_nav_toggle').on('click', function(){
+            // $(this).css('font-weight' ,'bolder');
+            // $(this).css('background-color' ,'#0596a3');
+            // $(this).css('color' ,'white');
+            $(this).toggleClass('active_this');
+            let Class = $(this).data('class');
+            $('.'+Class).toggleClass('d-none');
 
+        });
         </script>
 </body>
 

@@ -29,8 +29,21 @@
         margin-top: 2px;
     }
 
-</style>
+    .nav_dropdown_link {
+        font-size: 14px !important;
+        color: black !important;
+        text-transform: uppercase !important;
+    }
 
+    .nav_dropdown_link:hover {
+        color: #0f97d6 !important;
+    }
+
+    .dropdown-menu {
+        font-size: 14px !important;
+    }
+
+</style>
 
 
 <div class="top_bar">
@@ -45,17 +58,6 @@
                         href="https://thehvacservice.ca/services/">Services</a></li>
                 <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a
                         href="https://thehvacservice.ca/advantages/">Advantages</a></li>
-                {{-- <li id="menu-item-288"
-                    class="menu-item menu-item-type-post_type_archive menu-item-object-review menu-item-288"><a
-                        href="https://thehvacservice.ca/reviews/">Reviews</a></li>
-                <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a
-                        href="https://thehvacservice.ca/blog/">Blog</a></li>
-                <li id="menu-item-852"
-                    class="menu-item menu-item-type-post_type_archive menu-item-object-location menu-item-852"><a
-                        href="https://thehvacservice.ca/locationsAll/">Find a Location</a></li>
-                <li id="menu-item-1654" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1654"><a
-                        href="https://thehvacservice.ca/?page_id=1609">Special Offer for Schools</a></li> --}}
-
             </ul>
         </div>
     </div>
@@ -73,207 +75,184 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 152px;">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item top_nav">
-                    <a class="nav-link " href="#">Heating</a>
-                    <div class="Jumbotron top_nav_1" style="display: none;">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <span><b>FURNACE</b></span>
-                                            <hr>
-                                            <li><a href="{{route('products.rent',3)}}">Rent Furnace</a></li>
-                                            <li><a href="{{route('products.buy',3)}}">Buy Furnace</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Repair Furnace</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Tune up & Maintenance</a></li>
-                                            <br>
-                                            <span class="mt-3"><b>Air Handler</b></span>
-                                            <hr>
-                                            <li><a href="{{route('products.buy',3)}}">Buy Air Handler</a></li>
 
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <span><b>BOILER</b></span>
-                                            <hr>
-                                             <li><a href="{{route('products.rent',3)}}">Rent Boiler</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Buy Boiler</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Repair Boiler</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Tune up & Maintenance</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item top_nav">
-                    <a class="nav-link " href="#">Cooling</a>
-                    <div class="Jumbotron top_nav_1" style="display:none;">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <span><b>Air Conditioners</b></span>
-                                            <hr>
-                                             <li><a href="{{route('products.rent',3)}}">Rent Air Conditioners</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Buy Air Conditioners</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Repair Air Conditioners</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Tune up & Maintenance</a></li>
-                                            <br>
-                                            <span class="mt-3"><b>Heat Pumps</b></span>
-                                            <hr>
-                                             <li><a href="{{route('products.rent',3)}}">Rent Heat Pumps</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Buy Heat Pumps</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Repair Heat Pumps</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Tune up & Maintenance</a></li>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle nav-link  nav_dropdown_link" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">HEATING</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="min-width: 643px !important;">
+                    <div class="row">
 
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <span><b>Ductless Air Conditioners</b></span>
-                                            <hr>
-                                             <li><a href="{{route('products.rent',3)}}">Rent Ductless Air Conditioners</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Buy Ductless Air Conditioners</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Repair Ductless Air Conditioners</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Tune up & Maintenance</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item top_nav">
-                    <a class="nav-link " href="#">Water Heating</a>
-                    <div class="Jumbotron top_nav_1" style="display: none;">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <span><b>Water Heater Tank</b></span>
-                                            <hr>
-                                             <li><a href="{{route('products.rent',3)}}">Rent Water Heater Tank</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Buy Water Heater Tank</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Repair Water Heater Tank</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <span><b>Tankless Water Heaters</b></span>
-                                            <hr>
-                                             <li><a href="{{route('products.rent',3)}}">Rent Tankless Water Heaters</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Buy Tankless Water Heaters</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Repair Tankless Water Heaters</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item top_nav">
-                    <a class="nav-link " href="#">Water Treatment</a>
-                    <div class="Jumbotron top_nav_1" style="display: none;">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <span><b>Whole-House Carbon Filtration System</b></span>
-                                            <hr>
-                                             <li><a href="{{route('products.rent',3)}}">Rent Whole-House Carbon Filtration System</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Buy Whole-House Carbon Filtration System</a></li>
-                                            <br>
-                                            <span class="mt-3"><b>Reverse Osmosis Drinking Water
-                                                    System</b></span>
-                                            <hr>
-                                             <li><a href="{{route('products.rent',3)}}">Rent RODWS</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Buy RODWS</a></li>
+                        <div class="col-md-6">
+                            <ul>
+                                <span><b>FURNACE</b></span>
+                                <hr>
+                                <li><a href="{{ route('products.rent', 3) }}">Rent Furnace</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Buy Furnace</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Repair Furnace</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Tune up & Maintenance</a></li>
+                                <br>
+                                <span class="mt-3"><b>Air Handler</b></span>
+                                <hr>
+                                <li><a href="{{ route('products.buy', 3) }}">Buy Air Handler</a></li>
 
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <span><b>Water Softener</b></span>
-                                            <hr>
-                                             <li><a href="{{route('products.rent',3)}}">Rent Water Softener</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Buy Water Softener</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Repair Water Softener</a></li>
-                                            <br>
-                                            <span><b>Home Water Filters</b></span>
-                                            <hr>
-                                             <li><a href="{{route('products.rent',3)}}">Rent Home Water Filters</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Buy Home Water Filters</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <span><b>BOILER</b></span>
+                                <hr>
+                                <li><a href="{{ route('products.rent', 3) }}">Rent Boiler</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Buy Boiler</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Repair Boiler</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Tune up & Maintenance</a></li>
+                            </ul>
                         </div>
                     </div>
-                </li>
-                <li class="nav-item top_nav">
-                    <a class="nav-link " href="#">Air Filteration</a>
-                    <div class="Jumbotron top_nav_1" style="display: none;">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <span><b>HRV</b></span>
-                                            <hr>
-                                             <li><a href="{{route('products.rent',3)}}">Rent HRV</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Buy HRV</a></li>
-                                            <br>
-                                            <span class="mt-3"><b>HEPA Filtration</b></span>
-                                            <hr>
-                                             <li><a href="{{route('products.rent',3)}}">Rent HEPA Filtration</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Buy Air Purification</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <span><b>Humidifier</b></span>
-                                            <hr>
-                                             <li><a href="{{route('products.rent',3)}}">Rent Humidifier</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Buy Humidifier</a></li>
-                                             <li><a href="{{route('products.buy',3)}}">Buy Dehumidifier</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle nav-link  nav_dropdown_link" id="Cooling" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" href="#">Cooling</a>
+                <div class="dropdown-menu" aria-labelledby="Cooling" style="min-width: 643px !important;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <span><b>Air Conditioners</b></span>
+                                <hr>
+                                <li><a href="{{ route('products.rent', 3) }}">Rent Air Conditioners</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Buy Air Conditioners</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Repair Air Conditioners</a>
+                                </li>
+                                <li><a href="{{ route('products.buy', 3) }}">Tune up & Maintenance</a></li>
+                                <br>
+                                <span class="mt-3"><b>Heat Pumps</b></span>
+                                <hr>
+                                <li><a href="{{ route('products.rent', 3) }}">Rent Heat Pumps</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Buy Heat Pumps</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Repair Heat Pumps</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Tune up & Maintenance</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <span><b>Ductless Air Conditioners</b></span>
+                                <hr>
+                                <li><a href="{{ route('products.rent', 3) }}">Rent Ductless Air
+                                        Conditioners</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Buy Ductless Air
+                                        Conditioners</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Repair Ductless Air
+                                        Conditioners</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Tune up & Maintenance</a></li>
+                            </ul>
                         </div>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle nav-link  nav_dropdown_link" id="Water_Heating"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Water Heating</a>
+                <div class="dropdown-menu" aria-labelledby="Water_Heating" style="min-width: 643px !important;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <span><b>Water Heater Tank</b></span>
+                                <hr>
+                                <li><a href="{{ route('products.rent', 3) }}">Rent Water Heater Tank</a>
+                                </li>
+                                <li><a href="{{ route('products.buy', 3) }}">Buy Water Heater Tank</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Repair Water Heater Tank</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <span><b>Tankless Water Heaters</b></span>
+                                <hr>
+                                <li><a href="{{ route('products.rent', 3) }}">Rent Tankless Water
+                                        Heaters</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Buy Tankless Water Heaters</a>
+                                </li>
+                                <li><a href="{{ route('products.buy', 3) }}">Repair Tankless Water
+                                        Heaters</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle nav-link  nav_dropdown_link" id="Water_Treatment"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Water Treatment</a>
+                <div class="dropdown-menu" aria-labelledby="Water_Treatment" style="min-width: 643px !important;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <span><b>Whole-House Carbon Filtration System</b></span>
+                                <hr>
+                                <li><a href="{{ route('products.rent', 3) }}">Rent Whole-House Carbon
+                                        Filtration System</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Buy Whole-House Carbon
+                                        Filtration System</a></li>
+                                <br>
+                                <span class="mt-3"><b>Reverse Osmosis Drinking Water
+                                        System</b></span>
+                                <hr>
+                                <li><a href="{{ route('products.rent', 3) }}">Rent RODWS</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Buy RODWS</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <span><b>Water Softener</b></span>
+                                <hr>
+                                <li><a href="{{ route('products.rent', 3) }}">Rent Water Softener</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Buy Water Softener</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Repair Water Softener</a></li>
+                                <br>
+                                <span><b>Home Water Filters</b></span>
+                                <hr>
+                                <li><a href="{{ route('products.rent', 3) }}">Rent Home Water Filters</a>
+                                </li>
+                                <li><a href="{{ route('products.buy', 3) }}">Buy Home Water Filters</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle nav-link nav_dropdown_link" id="air_filteration"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Air Filteration</a>
+                <div class="dropdown-menu" aria-labelledby="air_filteration" style="min-width: 643px !important;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <span><b>HRV</b></span>
+                                <hr>
+                                <li><a href="{{ route('products.rent', 3) }}">Rent HRV</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Buy HRV</a></li>
+                                <br>
+                                <span class="mt-3"><b>HEPA Filtration</b></span>
+                                <hr>
+                                <li><a href="{{ route('products.rent', 3) }}">Rent HEPA Filtration</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Buy Air Purification</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <span><b>Humidifier</b></span>
+                                <hr>
+                                <li><a href="{{ route('products.rent', 3) }}">Rent Humidifier</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Buy Humidifier</a></li>
+                                <li><a href="{{ route('products.buy', 3) }}">Buy Dehumidifier</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        {{-- <div>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Home</a>
-                </li>
-            </ul>
-        </div> --}}
-
     </div>
 </nav>
 
