@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\BannerModel;
 use Illuminate\Http\Request;
 use App\Models\Setting;
 use Illuminate\Support\Facades\Auth;
@@ -126,5 +127,35 @@ class SettingController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function bannerIndex()
+    {
+        $banners = BannerModel::all();
+        return view('backend.setting.banner_index',compact('banners'));
+    }
+    public function bannerCreate ()
+    {
+        $data = [
+            'is_edit' => false,
+            'title' => 'Add Banner',
+            'route' =>  route('setting.storebanner'),
+            'button' => 'Save',
+        ];
+        return view('backend.setting.banner_form')->with(compact('data'));
+    }
+    public function bannerStore(Request $request)
+    {
+        $validated = $request->validate([
+            'banner_img' => 'required',
+
+        ]);
+        $addbanner = new BannerModel();
+        $addbanner->title = $request->title;
+        $addbanner->description = $request->description;
+        $addbanner->image = UploadImage($request->file('banner_img'),'banner');
+        $addbanner->active = ($request->active == 'on') ? true : false;
+        $addbanner->title_active = ($request->title_active == 'on') ? true : false;
+        $addbanner->save();
+        return redirect()->route('setting.banner');
     }
 }

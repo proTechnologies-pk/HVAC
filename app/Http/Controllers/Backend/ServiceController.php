@@ -137,7 +137,6 @@ class ServiceController extends Controller
      */
     public function destroy($id)
     {
-        dd($id);
         $service = Service::find($id);
         $service->delete();
         return redirect()->route('service.index')->with('success','Category has been Deleted Successfully!');
